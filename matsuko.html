@@ -11,12 +11,10 @@
             
             .jimaku {
                 font-size: 36px;
-            }
+            }    
             
-            #j1 {
+            .jbig {
                 display: block;
-  
-                background: linear-gradient(0deg, rgba(218,16,16,1) 0%, rgba(82,23,23,1) 100%);
   
                 font-size: 136px;
                 font-family: "Noto Serif JP";
@@ -30,12 +28,31 @@
   
                 transform: scaleX(0.9);
             }
+            
+            #j1 {
+                background: linear-gradient(0deg, rgba(218,16,16,1) 0%, rgba(82,23,23,1) 100%);
+            }
+            
+            #j2 {
+                background: linear-gradient(0deg, rgba(73,218,16,1) 0%, rgba(26,82,23,1) 100%);
+            }
+            
+            #j3 {
+                background: linear-gradient(0deg, rgba(102,16,218,1) 0%, rgba(73,23,82,1) 100%);
+            }
+            
+            #j4 {
+                background: linear-gradient(0deg, rgba(218,216,16,1) 0%, rgba(82,73,23,1) 100%);
+            }
         </style>
     </head>
     <body>
         <input type="text" id="text" />
         <button id="enter">Generate</button>
-        <p class="jimaku" id="j1"></p>
+        <p class="jimaku jbig" id="j1"></p>
+        <p class="jimaku jbig" id="j2"></p>
+        <p class="jimaku jbig" id="j3"></p>
+        <p class="jimaku jbig" id="j4"></p>
     </body>
     <script>
         const elms = document.getElementsByClassName("jimaku");
