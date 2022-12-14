@@ -41,8 +41,9 @@
         const elms = document.getElementsByClassName("jimaku");
         const input = document.getElementById("text");
         const enter = document.getElementById("enter");
+        const elmsarray = Array.from(elms);
         enter.addEventListener("click", () => {
-            elms.forEach((i) => {
+            elmsarray.forEach((i) => {
                 i.innerHTML = input.value;
             });
         });
